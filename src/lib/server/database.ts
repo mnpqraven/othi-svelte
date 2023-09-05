@@ -15,5 +15,5 @@ export const db = drizzle(client);
 
 if (dev) {
   // automatically run needed migrations on the database
-  await migrate(db, { migrationsFolder: './drizzle' });
+  await migrate(db, { migrationsFolder: 'drizzle' });
 }

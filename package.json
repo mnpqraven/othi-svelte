@@ -10,10 +10,12 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "format": "prettier --plugin-search-dir . --write .",
-    "migrate": "drizzle-kit generate:sqlite"
+    "migrate": "drizzle-kit generate:sqlite",
+    "push": "drizzle-kit push:sqlite"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/adapter-vercel": "^3.0.3",
     "@sveltejs/kit": "^1.20.4",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",

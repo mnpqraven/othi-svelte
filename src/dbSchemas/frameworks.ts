@@ -10,6 +10,7 @@ export const frameworks = sqliteTable(
     stars: integer('stars')
   },
   (frameworks) => ({
-    nameIdx: index('name_idx').on(frameworks.name)
+    nameIdx: index('idx_frameworks_name').on(frameworks.name),
+    urlIdx: index('idx_frameworks_url').on(frameworks.url)
   })
 );

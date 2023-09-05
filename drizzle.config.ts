@@ -4,8 +4,8 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 export default {
-  schema: './src/lib/databaseSchema.ts',
-  out: './drizzle',
+  schema: 'src/dbSchemas/*',
+  out: 'drizzle',
   driver: 'turso',
   dbCredentials: {
     url: process.env['DB_URL'] as string,

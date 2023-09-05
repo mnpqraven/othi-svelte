@@ -14,6 +14,9 @@ const config = {
     adapter: adapter(),
     files: {
       lib: './src/lib/'
+    },
+    alias: {
+      db: './src/dbSchemas'
     }
   }
 };

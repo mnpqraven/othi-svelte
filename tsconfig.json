@@ -15,6 +15,12 @@
       ],
       "$lib/*": [
         "./src/lib/*"
+      ],
+      "$db": [
+        "./src/dbScheams"
+      ],
+      "$db/*": [
+        "./src/dbSchemas/*"
       ]
     }
   }
