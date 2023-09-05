@@ -1,3 +1,4 @@
+import type { InferInsertModel, InferSelectModel } from 'drizzle-orm';
 import { integer, sqliteTable, text, uniqueIndex } from 'drizzle-orm/sqlite-core';
 
 export const frameworks = sqliteTable(
@@ -14,3 +15,6 @@ export const frameworks = sqliteTable(
     urlIdx: uniqueIndex('idx_frameworks_url').on(frameworks.url)
   })
 );
+
+export type Framework = InferSelectModel<typeof frameworks>
+export type FrameworkInsert = InferInsertModel<typeof frameworks>

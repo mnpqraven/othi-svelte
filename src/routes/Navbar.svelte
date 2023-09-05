@@ -1,7 +1,7 @@
 <script lang="ts">
   const routes = [
     { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' }
+    { path: '/framework', label: 'Framework (dev)' }
   ];
 </script>
 
