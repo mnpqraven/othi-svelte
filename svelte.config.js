@@ -16,7 +16,7 @@ const config = {
       lib: './src/lib/'
     },
     alias: {
-      db: './src/dbSchemas'
+      $db: './src/dbSchemas'
     }
   }
 };
