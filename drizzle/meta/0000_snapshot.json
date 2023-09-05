@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "sqlite",
-  "id": "f7fd8ef0-55e3-4404-85b5-26b494d429db",
+  "id": "df1e7aa7-14db-4d85-b351-b7d27766a684",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "frameworks": {
@@ -9,7 +9,7 @@
       "columns": {
         "id": {
           "name": "id",
-          "type": "text",
+          "type": "integer",
           "primaryKey": true,
           "notNull": true,
           "autoincrement": false
@@ -49,14 +49,14 @@
           "columns": [
             "name"
           ],
-          "isUnique": false
+          "isUnique": true
         },
         "idx_frameworks_url": {
           "name": "idx_frameworks_url",
           "columns": [
             "url"
           ],
-          "isUnique": false
+          "isUnique": true
         }
       },
       "foreignKeys": {},
