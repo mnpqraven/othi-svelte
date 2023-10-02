@@ -9,11 +9,13 @@
 </script>
 
 <QueryClientProvider client={data.queryClient}>
-  <div class="h-11">
-    <Navbar />
-  </div>
+  <div class="h-screen w-screen">
+    <div class="h-11">
+      <Navbar />
+    </div>
 
-  <main>
-    <slot />
-  </main>
+    <main class="max-h-full">
+      <slot />
+    </main>
+  </div>
 </QueryClientProvider>
