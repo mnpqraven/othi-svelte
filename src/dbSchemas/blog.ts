@@ -6,10 +6,10 @@ export const blog = sqliteTable('blog', {
   name: text('name', { length: 255 }).notNull(),
   content: text('content'),
   createdAt: integer('createdAt', { mode: 'timestamp' })
-    .default(sql`CURRENT_TIMESTAMP()`)
+    .default(sql`CURRENT_TIMESTAMP`)
     .notNull(),
   updatedAt: integer('updatedAt', { mode: 'timestamp' })
-    .default(sql`CURRENT_TIMESTAMP() ON UPDATE CURRENT_TIMEPSTAMP`)
+    .default(sql`CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMEPSTAMP`)
     .notNull()
 });
 
