@@ -1,12 +1,14 @@
 <script lang="ts">
   const routes = [
     { path: '/', label: 'Home' },
-    { path: '/framework', label: 'Framework (dev)' }
+    { path: '/planner', label: 'Planner' }
   ];
 </script>
 
-<nav class="fixed h-11 w-full bg-red-300 flex gap-2">
+<nav class="fixed flex h-11 w-full gap-2 py-2 border-b border-gray-400">
   {#each routes as route}
-    <a href={route.path}>{route.label}</a>
+    <a href={route.path} class="btn variant-filled">
+      {route.label}
+    </a>
   {/each}
 </nav>

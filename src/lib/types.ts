@@ -3,3 +3,7 @@ export type Post = {
   title: string;
   body: string;
 };
+
+export interface List<T> {
+  list: T[];
+}

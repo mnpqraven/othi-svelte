@@ -5,17 +5,19 @@
   import { QueryClientProvider } from '@tanstack/svelte-query';
   import Navbar from './Navbar.svelte';
 
+  import { AppShell } from '@skeletonlabs/skeleton';
+
   export let data;
 </script>
 
 <QueryClientProvider client={data.queryClient}>
-  <div class="h-screen w-screen">
-    <div class="h-11">
+  <AppShell>
+    <svelte:fragment slot="header">
       <Navbar />
-    </div>
+    </svelte:fragment>
 
-    <main class="max-h-full">
+    <div class="mt-11">
       <slot />
-    </main>
-  </div>
+    </div>
+  </AppShell>
 </QueryClientProvider>
